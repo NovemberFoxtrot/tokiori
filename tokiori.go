@@ -20,7 +20,7 @@ func main() {
 		func(x, y int) int { return x % (y * y + 1) },
 	}
 
-	x, y := 69691, 2
+	x, y := 69691, 69693
 	for i := 0; i < 1000; i++ {
 		x = fns[rand.Intn(len(fns))](x, y)
 		y = fns[rand.Intn(len(fns))](x, y)
