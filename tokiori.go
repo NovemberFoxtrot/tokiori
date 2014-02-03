@@ -11,7 +11,6 @@ type binFunc func(int, int) int
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	// create a slice of functions
 	fns := []binFunc{
 		func(x, y int) int { return x + y },
 		func(x, y int) int { return x - y },
